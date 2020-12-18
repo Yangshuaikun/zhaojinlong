@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<style>
+	*{
+		margin:0;
+		padding:0;
+	}
+	a{
+		text-decoration:none;
+	}
+	li{
+		list-style-type:none;
+	}
+	#container{
+		float:left;
+		width:965px;
+		height:2511px;
+		position:relative;
+	}
+	.container1{
+		text-align:center;
+		width:1535px;
+		height:240px;
+		background-color:black;
+	}
+	.container1 img{
+		width:180px;
+		height:240px;
+	}
+	.duanluo1,.duanluo2{
+		width:670px;
+		height:180px;
+		line-height:180px;
+	}
+	.duanluo1{
+		float:left;
+		color:white;
+		font-family:Viner Hand ITC;
+		font-size:90px;
+	}
+	.duanluo2{
+		float:right;
+		color:red;
+		font-family:Viner Hand ITC;
+		font-size:90px;
+	}
+	.duanluo3{
+		display:inline-block;
+		position:relative;
+		bottom:20px;
+		left:560px;
+		color:white;
+	}
+	.duanluo3 a{
+		color:green;
+	}
+	.sousuo{
+		float:right;
+		position:relative;
+		bottom:45px;
+		right:15px;
+	}
+	.seach{
+		width:200px;
+		height:20px;
+		border-color:#8A7B66;
+		padding-left:19px;
+		float:left;
+		background-color:black;
+	}		
+	.submit{
+		width:25px;
+		height:24px;
+		background:black url(雪梨在线_slices/fa-search.png) no-repeat center center;
+		vertical-align:bottom;
+		border:none;
+		float:left;
+	}
+	.container2{
+		background-color:black;
+		width:1535px;
+		height:80px;
+	}
+	.daohang1{
+		width:1278px;
+		height:60px;
+		float:left;
+		padding-left:10px;
+		padding-right:10px;
+		text-align:center;
+		font-size:16px;
+	}
+	.daohang1 li{
+		float:left;
+		width:213px;
+		height:60px;
+		line-height:60px;
+	}
+	.daohang1 a{
+		color:white;
+	}
+	.container3{
+		width:1535px;
+		height:327px;
+		background-color:black;
+	}
+	.daohang2{
+		width:200px;
+		height:303px;
+		float:left;
+		background-color:rgba(0,0,0,1);
+		text-align:center;
+		font-size:20px;
+	}
+	.daohang2 li{
+		width:200px;
+		height:100px;
+		line-height:100px;
+		border:1px solid black;
+	}
+	.daohang2 a{
+		color:#8A7B66;
+	}
+	.tuwen1 img{
+		width:540px;
+		height:327px;
+		float:left;
+		margin-right:15px;
+		display:inline-block;
+	}
+	.tuwen2 img{
+		width:540px;
+		height:327px;
+		float:left;
+		display:inline-block;
+		position:relative;
+		bottom:37px;
+	}
+	.tuwen1 p{
+		color:white;
+		position:relative;
+		right:300px;
+		top:250px;
+		font-size:18px;
+		color:grey;
+	}
+	.zhuchang1{
+		color:#8A7B66;
+	}
+	.geming1{
+		color:orange;
+		font-family:华文隶书;
+		position:relative;
+		font-size:35px;
+		bottom:250px;
+		right:180px;
+	}
+	.tuwen2 p{
+		color:white;
+		position:relative;
+		right:250px;
+		top:220px;
+		font-size:18px;
+		color:grey;
+	}
+	.zhuchang2{
+		color:#8A7B66;
+	}
+	.geming2{
+		color:orange;
+		font-family:华文隶书;
+		position:relative;
+		font-size:35px;
+		bottom:260px;
+		right:125px;
+	}
+	.daohang3{
+		width:200px;
+		height:303px;
+		float:right;
+		background-color:rgba(0,0,0,1);
+		text-align:center;
+		font-size:25px;
+		position:relative;
+		bottom:75px;
+		right:35px;
+	}
+	.daohang3 li{
+		width:200px;
+		height:150px;
+		line-height:100px;
+		border:1px solid black;
+	}
+	.daohang3 a{
+		color:#8A7B66;
+	}
+	.container4{
+		width:1535px;
+		height:700px;
+		background-color:black;
+		padding-top:10px;
+	}
+	.jieshao1{
+		width:1535px;
+		height:100px;
+		text-align:center;
+		background-color:rgb(15,15,15);
+	}
+	.biaoti1{
+		height:100px;
+		line-height:100px;
+		float:left;
+		display:inline-block;
+		color:white;
+		text-align:center;
+		position:relative;
+		bottom:30px;
+		font-size:25px;
+	}
+	.jieshao1 img{
+		width:200px;
+		height:100px;
+		position:relative;
+		bottom:30px;
+		left:180px;
+		display:inline-block;
+		float:right;
+	}
+	.daohang4{
+		width:1000px;
+		height:100px;
+		display:inline-block;
+		position:relative;
+		bottom:125px;
+	}
+	.daohang4 li{
+		width:200px;
+		height:99px;
+		float:left;
+		text-align:center;
+		line-height:100px;
+		font-size:20px;
+		border-bottom:1px solid rgb(15,15,15);
+	}
+	.daohang4 a{
+		color:#8A7B66;
+	}
+	.daohang4 a:hover{
+		border-bottom:1px solid #8A7B66;
+	}
+	.biaoti2{
+		width:500px;
+		height:600px;
+		float:left;
+		display:inline-block;
+		color:#8A7B66;
+		font-size:100px;
+		font-family:方正舒体;
+		text-align:center;
+		position:relative;
+		right:200px;
+	}
+	.biaoti2 li{
+		wdith:500px;
+		height:285px;
+		line-height:285px;
+	}
+	.neirong1{
+		wdith:1535px;
+		height:570px;
+	}
+	.duanluo4{
+		width:930px;
+		padding-left:20px;
+		height:570px;
+		float:right;
+		display:inline-block;
+		color:#8A7B66;
+		position:relative;
+		bottom:1140px;
+		text-indent:20px;
+	}
+	.neirong1 img{
+		width:950px;
+		height:570px;
+		float:right;
+		display:inline-block;
+		position:relative;
+		bottom:570px;
+	}
+	.container5{
+		padding-top:200px;
+		width:1535px;
+		height:700px;
+		background-color:black;
+		text-align:center;
+		position:relative;
+	}
+	.jieshao3{
+		color:white;
+		text-align:center;
+		font-size:25px;
+		display:inline-block;
+		float:left;
+		position:absolute;
+		bottom:750px;
+		left:50px;
+	}
+	.fengjing1{
+		width:400px;
+		height:500px;
+		float:left;
+		position:absolute;
+		bottom:200px;
+		left:50px;
+		margin-right:1px;
+	}
+	.fengjing2{
+		width:250px;
+		height:250px;
+		float:left;
+		position:absolute;
+		left:452px;
+	}
+	.fengjing3{
+		width:250px;
+		height:250px;
+		float:left;
+		position:absolute;
+		left:704px;
+	}
+	.fengjing4{
+		width:250px;
+		height:250px;
+		float:left;
+		position:absolute;
+		left:956px;
+	}
+	.fengjing5{
+		width:250px;
+		height:250px;
+		float:left;
+		position:absolute;
+		left:1208px;
+	}
+	.fengjing6{
+		width:500px;
+		height:250px;
+		float:left;
+		position:absolute;
+		left:452px;
+		bottom:200px;
+	}
+	.fengjing7{
+		width:500px;
+		height:250px;
+		float:left;
+		position:absolute;
+		left:954px;
+		bottom:200px;
+	}
+	.more{
+		position:absolute;
+		bottom:140px;
+		right:50px;
+		font-size:25px;
+	}
+	.more a{
+		color:green;
+	}
+	.other{
+		position:absolute;
+		bottom:50px;
+		left:768px;
+		font-size:30px;
+	}
+	.other a{
+		color:#8A7B66;
+	}
+	.container6{
+		width:1535px;
+		height:250px;
+		background-color:black;
+		position:relative;
+	}
+	.yuyan1{
+		display:inline-block;
+		color:white;
+		position:absolute;
+		font-size:20px;
+		bottom:150px;
+		font-family:方正舒体;
+	}
+	.yuyan1 span{
+		color:green;
+		position:absolute;
+		top:50px;
+		left:100px;
+		font-size:30px;
+		font-family:方正舒体;
+	}
+	.banquan{
+		width:200px;
+		height:50px;
+		float:right;
+		position:absolute;
+		bottom:10px;
+		right:200px;
+	}
+	.banquan li{
+		width:100px;
+		height:50px;
+		line-height:50px;
+		float:left;
+	}
+	.banquan a{
+		color:white;
+	}
+	#num1{
+		text-align:center;
+		border:2px solid rgba(192,192,192);
+		background-color:rgba(192,192,192);
+		position:relative;
+		top:300px;
+		left:600px;
+		width:400px;
+		height:200px;
+		display:none;
+	}
+	#son1son{
+		display:inline-block;
+		float:left;
+		font-size:13px;
+	}
+	#son2son{
+		display:inline-block;
+		float:left;
+		font-size:13px;
+		position:relative;
+		top:20px;
+		right:70px;
+	}
+	#son1{
+		position:relative;
+		top:20px;
+		left:20px;
+		padding:14px;
+		width:280px;
+		height:14px;
+		margin-bottom:5px;
+	}
+	#son2{
+		padding:14px;
+		width:280px;
+		height:14px;
+		position:relative;
+		top:10px;
+		left:20px;
+	}
+	#input1{
+		display:inline-block;
+		float:right;
+		border:0px;
+		position:relative;
+		bottom:3px;
+		font-size:18px;
+		outline: none;
+	}
+	#input2{
+		display:inline-block;
+		float:right;
+		border:0px;
+		position:relative;
+		font-size:18px;
+		outline:none;
+	}
+	#error1{
+		display:inline-block;
+		float:left;
+		font-size:13px;
+		width:91px;
+		height:17px;
+		color:grey;
+		position:relative;
+		top:10px;
+		left:100px;
+	}
+	#error2{
+		display:inline-block;
+		float:left;
+		position:relative;
+		top:15px;
+		left:60px;
+		font-size:13px;
+		width:156px;
+		height:17px;
+		color:grey;
+	}
+	#button1{
+		width:40px;
+		position:relative;
+		right:100px;
+		top:30px;
+	}
+	#button2{
+		width:40px;
+		position:relative;
+		right:40px;
+		top:30px;
+	}
+	#music{
+		width:200px;
+		height:100px;
+	}
+	#music1{
+		width:1535px;
+		height:100px;
+		background-color:black;
+	}
+	#image{
+		width:100px;
+		height:100px;
+		float:right;
+		color:white;
+		position:relative;
+		right:30px;
+		top:35px;
+		z-index:100;
+	}
+	#div{
+		background-color:black;
+		color:white;
+		position:relative;
+		bottom:10px;
+	}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div id="num1">
+			<p id="son">用户注册</p>
+			<div id="son1">
+				<p id="son1son">用户名</p>
+				<input type="text" id="input1"/>
+			</div>
+			<p id="error1"></p>
+			<div id="son2">
+				<p id="son2son">密码</p>
+				<input type="text" id="input2"/>
+			</div>
+			<p id="error2"></p>
+			<button id="button1">确定</button>
+			<button id="button2">取消</button>
+		</div>
+		<div class="header-top">
+			<div class="container1 clear">
+				<p class="duanluo1"><span>Welcome To</span></p>
+				<p class="duanluo2"><span>Shadow Isles</span></p>
+				<img src="作业8所需图片/Warden of soul lock .jpg">
+				<p class="duanluo3" id="duanluo3">请<a href="#" id="record">登录</a>/<a href="#" id="register">注册</a></p>
+			</div>
+		</div>
+		<div class="header-middle">
+			<div class="container2 clear">
+				<ul class="daohang1">
+					<li><a href="#">首页</a></li>
+					<li><a href="#">英雄系列故事</a></li>
+					<li><a href="#">活动中心</a></li>
+					<li><a href="#">公告</a></li>
+					<li><a href="#">福光岛(过去)</a></li>
+					<li><a href="#">更多...</a></li>
+				</ul>
+				<form class="sousuo">
+				<input type="text" placeholder="输入关键字" class="seach"/>
+				<input type="button" class="submit"/>
+				</form>
+			</div>
+		</div>
+		<div class="header-bottom">
+			<div class="container3 clear">
+				<ul class="daohang2">
+					<li><a href="#">演唱会</a></li>
+					<li><a href="#">乐队介绍</a></li>
+					<li><a href="#">乐队成员</a></li>
+				</ul>
+				<div class="tuwen1 clear">
+					<img src="作业8所需图片/penta kill.jpg">
+					<p>主唱<span class="zhuchang1">卡尔萨斯</span><span class="geming1">凡性的提醒</span></p>
+					</div>
+				<div class="tuwen2 clear">
+					<img src="作业8所需图片/Kayle.jpg">
+					<p>主唱<span class="zhuchang2">凯尔</span><span class="geming2">不灭之握</span></p>
+				</div>
+				<ul class="daohang3">
+					<li><a href="#">皮肤介绍</a></li>
+					<li><a href="#">皮肤购买</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="body-top">
+			<div class="container4">
+				<div class="jieshao1 clear">
+					<p class="biaoti1">暗影岛背景故事</p>
+					<img src="作业8所需图片/Shadow of war.jpg">
+					<ul class="daohang4 clear">
+						<li><a href="#">余恨</a></li>
+						<li><a href="#">王子挽歌</a></li>
+						<li><a href="#">福影双至</a></li>
+						<li><a href="#">海葬</a></li>
+						<li><a href="#">临终仪式</a></li>
+					</ul>
+				</div>
+				<div class="neirong1 clear">
+					<ul class="biaoti2 clear">
+						<li>余</li>
+						<li>恨</li>
+					</ul>
+					<img src="作业8所需图片/Spider Queen.jpg">
+					<p class="duanluo4">他躺在血泊中，洁白的石头上流淌着鲜亮的猩红。他的剑落在身边，剑刃已经崩裂。杀害他的人们围绕他站着。四周笼罩在阴影里，但他的眼中只有她。<br/>她与他四目相对，但却视而不见。他染血的脸庞像镜中的倒影般回望他。他侧身躺着。呼吸轻浅，越来越弱。<br/>她僵死的手冷冰冰的，但他什么感觉都没有。一种宁静像裹尸布一样将他遮盖。没有痛苦，没有恐惧，没有怀疑。都已不复存在。<br/>他戴着护甲的手指握紧了她的手。生时无法与她共度，但死后却可与她相伴。<br/>在似乎已经经历了永远以后，他再次感到平静……<br/>“你好，莱卓斯”。一个本不该有的声音出现了。<br/>莱卓斯……是他的名字。<br/>他听到一声邪恶、戏谑的狂笑，然后是铁链摇摆的声音。<br/>“我不明白你为什么要如此折磨自己，但我很高兴看到你的痛苦。”<br/>现实像浪潮一般压过来，威胁着要把他拖下深渊。<br/>他身子下的血泊已经有数百年的沧桑，只剩下棕褐色的薄层。石头也不是白色，而是漆黑的，遍布裂痕。天空中乱流涌动，黑云在闪电的映照下忽明忽暗。
+					<br/>到处都是翻腾的黑雾。<br/>她片刻之间依然还在，他紧紧抱着她，不愿放手。<br/>“我的爱人。”他吐出一口气，但随即她便消散了，就像风中的灰烬。他手中空无一物。<br/>他已经死了<br/>他被困在了这永恒的交界状态中。<br/>莱卓斯站起来，拾起了残破的剑。<br/>他举起鬼影般的剑，指向了打破他回忆幻象的人。那个充满憎恨的恶灵潜伏在黑暗中，眼中燃烧着冷焰，对他冷嘲热讽。那盏受诅咒的灯笼正放在附近的碎石残骸上，散发出一道道死光，被俘获的灵魂正在里面翻滚。<br/>魂锁典狱长。锤石。<br/>噢，他对他真是恨之入骨。<br/>这个恶灵一直在纠缠、嘲弄、耻笑他，似乎已经有无数个世纪。现在他居然找到了这里？这里曾是他的避风港，只有这个地方能让他在恐怖的现实中感受到片刻的安宁。<br/><a href="#" class="quanbu1">查看全部</a></p>
+				</div>
+			</div>
+		</div>
+		<div class="body-bottom">
+			<div class="container5 clear">
+				<p class="jieshao3">暗影岛的风景</p>
+				<img src="作业8所需图片/Shadow Isles view1.jpg" class="fengjing1">
+				<img src="作业8所需图片/Shadow Isles view2.jpg" class="fengjing2">
+				<img src="作业8所需图片/Shadow Isles view3.jpg" class="fengjing3">
+				<img src="作业8所需图片/Shadow Isles view4.jpg" class="fengjing4">
+				<img src="作业8所需图片/Shadow Isles view6.jpg" class="fengjing5">
+				<img src="作业8所需图片/Shadow Isles view7.jpg" class="fengjing6">
+				<img src="作业8所需图片/Shadow Isles view8.jpg" class="fengjing7">
+				<p class="more"><a href="#">更多风景</a></p>
+				<p class="other"><a href="#">其他地区</a></p>
+			</div>
+		</div>
+		<div class="bottom">
+			<div class="container6">
+				<img src="作业8所需图片/Shadow Isles .png">
+				<p class="yuyan1">我们一直都在，自从福光岛诞生的那刻<span>一直都在</span></p>
+				<ul class="banquan">
+					<li><a href="#">关于lol</a></li>
+					<li><a href="#">其他。。。</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="music1">	
+			<embed src="KELUN-CHU-BURA.mp3" id="music">
+			<img src="作业8所需图片/arror.jpg" id="image" onclick="goTop()">
+			<div id="div">
+				<img src="作业8所需图片/0.png" id="time0"/>
+				<img src="作业8所需图片/0.png" id="time1"/>
+				时
+				<img src="作业8所需图片/0.png" id="time2"/>
+				<img src="作业8所需图片/0.png" id="time3"/>
+				分
+				<img src="作业8所需图片/0.png" id="time4"/>
+				<img src="作业8所需图片/0.png" id="time5"/>
+				秒
+			</div>
+		</div>
+	</div>
+	<script>
+	var record=document.getElementById('record');
+	var register=document.getElementById('register');
+	var input1=document.getElementById('input1');
+	var input2=document.getElementById('input2');
+	var num1=document.getElementById('num1');
+	var container=document.getElementById('container');
+	var error1=document.getElementById('error1');
+	var error2=document.getElementById('error2');
+	var duanluo3=document.getElementById('duanluo3');
+	var button1=document.getElementById('button1');
+	var music=document.getElementById('music');
+	var son1son=document.getElementById('son1son');
+	var son2son=document.getElementById('son2son');
+	var Name=[];
+	var Pword=[];
+	var name=0;
+	var pword=0;
+	var m=3;
+	register.onclick=function(){
+		son.innerHTML="用户注册";
+		num1.style.display="block";
+		container.style.bottom="200px";
+		input1.style.display="block";
+		input2.style.display="block";
+		son1son.style.display="block";
+		son2son.style.display="block";
+		error1.style.display="block";
+		error2.style.display="block";
+		button1.style.right="100px";
+		button2.style.right="40px";
+	}
+	input1.onkeypress=function(ev){
+		if(son.innerHTML=="用户登录"){
+			if(ev.keyCode==13){
+				for(var i=0;i<Name.length;i++){
+					if((input1.value==Name[i])){
+						error1.innerHTML="";
+					}
+					else{
+						error1.innerHTML="用户名不存在";
+					}
+				}
+			}
+		}
+		else{
+			if(ev.keyCode==13){
+				Name[name]=input1.value;
+				input1.value="";
+				name++;
+				Pword[pword]=input2.value;
+				input2.value="";
+				pword++;
+			}
+			if(ev.keyCode==13&&Name[name-1]!=null&&Pword[pword-1]!=null){
+				var time=setInterval(function(){
+					son.innerHTML="注册成功"+m;
+					m--;
+					input1.style.display="none";
+					input2.style.display="none";
+					son1son.style.display="none";
+					son2son.style.display="none";
+					error1.style.display="none";
+					error2.style.display="none";
+					button1.style.right="30px";
+					button2.style.right="-30px";
+					if(m==-1){
+						clearInterval(time);
+						num1.style.display="none";
+						container.style.bottom="0px";
+						input1.value="";
+						input2.value="";
+						m=3;
+					}
+				},1000);
+			}
+		}
+	}
+	button1.onclick=function(){
+		if(son.innerHTML=="用户注册"){
+			if(input1.value==""){
+				error1.innerHTML="用户名不能为空";
+			}
+			else{
+				Name[name]=input1.value;
+				input1.value="";
+				name++;
+			}
+			if(input2.value==""){
+				error2.innerHTML="密码不能为空";
+			}
+			else{
+				Pword[pword]=input2.value;
+				input2.value="";
+				pword++;
+			}
+			if(Name[name-1]!=null&&Pword[pword-1]!=null){
+				var time=setInterval(function(){
+					son.innerHTML="注册成功"+m;
+					m--;
+					input1.style.display="none";
+					input2.style.display="none";
+					son1son.style.display="none";
+					son2son.style.display="none";
+					error1.style.display="none";
+					error2.style.display="none";
+					button1.style.right="30px";
+					button2.style.right="-30px";
+					if(m==-1){
+						clearInterval(time);
+						num1.style.display="none";
+						container.style.bottom="0px";
+						input1.value="";
+						input2.value="";
+						m=3;
+					}
+				},1000);
+			}
+		}
+		else{
+			if(Name.length!=0){
+				for(var i=0;i<Name.length;i++){
+					if((input1.value==Name[i])){
+						error1.innerHTML="";
+					}
+					else{
+						error1.innerHTML="用户名不存在";
+					}
+				}
+			}
+			else{
+				error1.innerHTML="用户名不存在";
+			}
+			if(input1.value==""){
+				error1.innerHTML="用户名不能为空";
+			}
+			if(Pword.length!=0){
+				for(var i=0;i<Pword.length;i++){
+					if(input2.value==Pword[i]){
+						error2.innerHTML="";
+					}
+					else{
+						error2.innerHTML="密码错误";
+					}
+				}
+			}
+			else{
+				error2.innerHTML="密码错误";
+			}
+			if(input2.value==""){
+				error2.innerHTML="密码不能为空";
+			}
+			if((error1.innerHTML=="")&&(error2.innerHTML=="")){
+				num1.style.display="none";
+				duanluo3.innerHTML="欢迎回来，"+Name[name-1];	
+				container.style.bottom="0px";
+			}
+		}
+	}
+	button2.onclick=function(){
+		num1.style.display="none";
+		container.style.bottom="0px";
+		input1.value="";
+		input2.value="";
+	}
+	input2.onkeypress=function(eve){
+		if(son.innerHTML=="用户登录"){
+			if(eve.keyCode==13){
+				for(var i=0;i<Pword.length;i++){
+					if(input2.value==Pword[i]){
+						error2.innerHTML="";
+					}
+					else{
+						error2.innerHTML="密码错误";
+					}
+				}
+				if((error1.innerHTML=="")&&(error2.innerHTML=="")){
+					num1.style.display="none";
+					duanluo3.innerHTML="欢迎回来，"+Name[name-1];
+					container.style.bottom="0px";
+				}
+			}
+		}
+		else{
+			if(eve.keyCode==13){
+				Name[name]=input1.value;
+				input1.value="";
+				name++;
+				Pword[pword]=input2.value;
+				input2.value="";
+				pword++;
+			}
+			if(eve.keyCode==13&&Name[name-1]!=null&&Pword[pword-1]!=null){
+				var time=setInterval(function(){
+					son.innerHTML="注册成功"+m;
+					m--;
+					input1.style.display="none";
+					input2.style.display="none";
+					son1son.style.display="none";
+					son2son.style.display="none";
+					error1.style.display="none";
+					error2.style.display="none";
+					button1.style.right="30px";
+					button2.style.right="-30px";
+					if(m==-1){
+						clearInterval(time);
+						num1.style.display="none";
+						container.style.bottom="0px";
+						input1.value="";
+						input2.value="";
+						m=3;
+					}
+				},1000);
+			}
+		}
+	}
+	record.onclick=function(){
+		son.innerHTML="用户登录";
+		num1.style.display="block";
+		container.style.bottom="200px";
+		input1.style.display="block";
+		input2.style.display="block";
+		son1son.style.display="block";
+		son2son.style.display="block";
+		error1.style.display="block";
+		error2.style.display="block";
+		button1.style.right="100px";
+		button2.style.right="40px";
+	}
+	function goTop(){
+		var image = document.getElementById("image");
+		document.documentElement.scrollTop = document.body.scrollTop = 0;
+	}
+	window.onscroll = function(){
+		var image = document.getElementById("image");
+		var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+		if(scrollTop > 300){	
+			image.style.display = "block";
+		} 
+		else {
+			image.style.display = "none";
+		}
+	}
+	setInterval(function(){
+		var now = new Date();
+		var h = now.getHours();
+		var m = now.getMinutes();
+		var s = now.getSeconds();
+		
+		var _date = [
+			h<10?0:Math.floor(h/10), h%10,
+			m<10?0:Math.floor(m/10), m%10,
+			s<10?0:Math.floor(s/10), s%10
+			]
+		var imgs =[];
+		for(var i=0;i<6;i++){
+			imgs[i]=document.getElementById("time"+i);
+		}
+		for(var i=0; i<imgs.length; i++){
+			imgs[i].src = "作业8所需图片/"+_date[i]+".png";
+		}
+	}, 1000);
+	</script>
+</body>
+</html>
